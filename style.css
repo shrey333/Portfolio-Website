@@ -1,0 +1,303 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, .navbar a {
+    color: orangered;
+}
+
+
+
+.navbar {
+    background: black;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar nav ul li a:hover {
+    color: orangered;
+}
+
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.about-right {
+    flex: 2;
+}
+
+.name {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.pitch {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: orangered;
+    color: white;
+    padding: 10px;
+    
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: black;
+}
+
+
+.footer {
+    background: gray;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+ .social-icons a:hover {
+    color: orangered; 
+    
+}
+
+
+
+.download{
+    margin-top: 40px;
+}
+.btn{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    padding: 9px;
+   
+    border-radius: 14px;
+    
+}
+.btn:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.coldrink-website{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* General Responsive Styling */
+body {
+    font-size: 16px;
+}
+
+/* Small Devices (Mobile, max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar{
+        position: static;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left {
+        margin-bottom: 20px;
+    }
+
+    .about-right .name {
+        font-size: 2rem;
+    }
+
+    .about-right .pitch {
+        font-size: 1rem;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium Devices (Tablets, max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar nav ul {
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left {
+        margin-bottom: 20px;
+    }
+
+    .about-right .name {
+        font-size: 2.5rem;
+    }
+
+    .about-right .pitch {
+        font-size: 1.1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 15px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.4rem;
+    }
+}
+
+/* Very Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar nav ul li {
+        margin: 0 10px;
+    }
+
+    .about-right .name {
+        font-size: 1.8rem;
+    }
+
+    .about-right .pitch {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        padding: 6px;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer .social-icons a {
+        font-size: 1rem;
+    }
+}
